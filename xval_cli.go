@@ -27,7 +27,7 @@ func init() {
 func main() {
 	flag.Parse()
 
-	if *serial == "" || *xval == "" {
+	if serial == nil || xval == nil {
 		flag.Usage()
 		return
 	}
